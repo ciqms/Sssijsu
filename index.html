@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>شعار زين كاش نصي</title>
+    <style>
+        .zain-text-logo {
+            font-family: 'Arial', sans-serif;
+            display: inline-block;
+            padding: 15px 25px;
+            background: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            margin: 20px;
+        }
+        .zain-part {
+            font-size: 28px;
+            font-weight: bold;
+            color: #000000;
+            display: inline-block;
+        }
+        .cash-part {
+            font-size: 28px;
+            font-weight: bold;
+            color: #00a651;
+            display: inline-block;
+        }
+        .tagline {
+            display: block;
+            font-size: 14px;
+            color: #666666;
+            margin-top: 5px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="zain-text-logo">
+        <span class="zain-part">Zain</span>
+        <span class="cash-part">Cash</span>
+        <span class="tagline">دفع إلكتروني آمن وسريع</span>
+    </div>
+</body>
+</html>
+<div class="form-group"><label class="control-label"> </label><div class="panel-body border-solid border-rounded">
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>طريقة دفع عبر بينانس</title>
+    <style>
+        .container {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .btn {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+        .btn:hover {
+            background-color: #0056b3;
+        }
+        .binance-logo {
+            width: 50px; /* حجم الشعار */
+            height: 50px;
+            vertical-align: middle;
+            margin-bottom: 20px; /* إضافة مسافة أسفل الشعار */
+        }
+        .binance-id {
+            font-weight: bold;
+            font-size: 20px;
+        }
+    </style>
+
+
+
+<div class="container">
+    <!-- الشعار الخاص بـ بينانس -->
+    
+
+    <p><strong>رقم حساب الوكيل:</strong> <span class="binance-id">07834862400</span></p>
+    <button class="btn" onclick="copyBinanceId()">نسخ رقم</button>
+
+    <form id="paymentForm">
+        <div class="form-group">
+            <label for="binance_id_input">رقم حسابك الذي قمة تحويل منة:</label>
+            <input type="text" id="binance_id_input" name="binance_id" required="" placeholder="أدخل رقم حسابك الذي قمة بتحويل منة" class="form-control">
+        </div>
+
+        <div class="form-group">
+            <label for="amount_input">المبلغ الذي قمة بتحويله:</label>
+            <input type="number" id="amount_input" name="amount" required="" placeholder="أدخل المبلغ" class="form-control">
+        </div>
+
+        <p>بعد التحويل المبلغ المطلوب علي الحساب المذكور في الأعلى، قم بتاكيد الدفع الآن
+
+
+ (ادنى حد للدفع 5000 وسعر صرف دولار 1500 لكل 1$).</p>
+
+        <button type="button" class="btn" onclick="submitPayment()">تاكيد دفع</button>
+    </form>
+</div>
+
+<script>
+    function copyBinanceId() {
+        var binanceId = "07834862400";
+        navigator.clipboard.writeText(binanceId)
+            .then(() => {
+                alert("تم نسخ رقم!");
+            })
+            .catch(err => {
+                alert("حدث خطأ أثناء نسخ رقم!");
+            });
+    }
+
+    function submitPayment() {
+        // الحصول على الرقم والمبلغ
+        var binanceId = document.getElementById("binance_id_input").value;
+        var amount = document.getElementById("amount_input").value;
+
+        // التحقق إذا كانت الحقول مليئة
+        if (binanceId && amount) {
+            // إنشاء رابط واتساب
+            var message = "رقم حسابك الذي قمة تحويل منة: " + binanceId + "\nالمبلغ: " + amount;
+            var whatsappUrl = "https://wa.me/9647763835403?text=" + encodeURIComponent(message);
+
+            // إعادة التوجيه إلى واتساب
+            window.location.href = whatsappUrl;
+        } else {
+            alert("من فضلك، قم بإدخال رقم حسابك والمبلغ.");
+        }
+    }
+</script>
+
+
+</div></div>
